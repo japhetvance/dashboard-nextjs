@@ -15,8 +15,6 @@ export default async function Page({
       page?: string;
     }>;
   }) {
-
-  try {
     const searchParams = await searchParamsPromise;  // Await the searchParams
 
     const query = searchParams?.query || '';
@@ -40,14 +38,4 @@ export default async function Page({
         </div>
       </div>
     );
-  } catch (error) {
-    console.error('Failed to fetch data:', error);
-    // Optionally show an error message or fallback UI here
-    return (
-      <div className="w-full">
-        <h1 className={`${lusitana.className} text-2xl`}>Error loading invoices</h1>
-        {/* You could add a fallback UI here */}
-      </div>
-    );
   }
-}
