@@ -4,8 +4,16 @@ const users = [
   {
     id: '410544b2-4001-4271-9855-fec4b6a6442a',
     name: 'User',
+    image: '/user-profile/user.jpg',
     email: 'user@nextmail.com',
     password: '123456',
+  },
+  {
+    id: '410544b2-4001-4271-9855-fec4b6a6443b',
+    name: 'Japs',
+    image: '/user-profile/japs.jpg',
+    email: 'japs@nextmail.com',
+    password: '012345',
   },
 ];
 
